@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-12">
+    <h5>Farms Selected</h5>
+  </div>
+</div>
+<div tabindex="0" class="e-card" id="basic">
+  <div class="e-card-header">
+    <div class="e-card-header-caption">
+      <div class="e-card-title">
+        <div class="e-card-image">
+          <div class="e-card-title">{{farm?.farm_name}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-card-content">
+    <ul>
+      <li>- Id: {{farm?.id}}</li>
+      <li>- Farm No: {{farm?.farm_no}}</li>
+      <li>- Farm Adress: {{farm?.address}}</li>
+      <li>- Active Date: {{farm?.active_date}}</li>
+    </ul>
+  </div>
+  <div class="e-card-actions e-card-vertical">
+    <button class="e-card-btn" (click)="close()">CLOSE</button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<h1>Hello {{ name }}!</h1>
+<ul class="nav nav-tabs">
+  <li class="nav-item \dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+      aria-expanded="false">Pick an Option</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" *ngFor="let item of menuOptions" [routerLink]="item.route">{{item.name}}</a>
+    </div>
+  </li>
+</ul>

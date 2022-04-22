@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';  
+
+p {
+  font-family: Lato;
+}
+
+.select-wrap {
+  padding: 0 0 10px 0;
+  font-family: Roboto;
+  /* padding: 1em; */
+}
+
+.select-wrap select {
+  height: 28px;
+  width: 100%;
+  border-width: 0 0 2px 0;
+  background: transparent;
+}
+
+.select-wrap select:focus {
+  border-bottom-style: solid;
+  border-color: #ff4081;
+}
+
+.select-wrap select, 
+.select-wrap select option {
+  outline: none;
+  font-size: 14px;
+  padding: .2em;
+  height: 30px;
+}
+
+@media (min-width: 480px) and (max-width:639px) {
+  .select-wrap {
+      width: 40%
+  }
+}
+
+@media (min-width:640px) {
+  .select-wrap {
+      width: 25%
+  }
+}
+
+.e-card .e-card-image {
+  background-image: url('./assets/Fields-finished-full-2.jpg');
+  background-position: center;
+}

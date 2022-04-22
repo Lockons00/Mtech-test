@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-4">
+		<h5>Farms List</h5>
+	</div>
+	<div class="col-8">
+		<button class="btn btn-outline-danger btn-sm" (click)="forceError()">Error Button</button>
+	</div>
+</div>
+<div class="row mt-2">
+	<div class="col-md-12">
+		<div class="control-section">
+			<div class="select-wrap">
+				<ejs-dropdownlist id='ddlelement' [dataSource]='ddldata' placeholder='Select category to filter'
+					(change)="onChange($event)"></ejs-dropdownlist>
+			</div>
+			<ejs-grid #grid [dataSource]='farms' allowPaging="true" [pageSettings]='pageSettings' allowFiltering='true'
+				[filterSettings]="filterSettings" (created)="gridCreated()" [selectionSettings]="selectionSettings"
+				(rowSelected)="rowSelected($event.data)" (rowDeselected)="rowSelected($event)">
+				<e-columns>
+					<e-column field='farm_no' headerText='Farm No'></e-column>
+					<e-column field='farm_name' headerText='Farm Name'></e-column>
+					<e-column field='active_date' headerText='Active Date' type="date" format="y-MM-dd"></e-column>
+				</e-columns>
+			</ejs-grid>
+		</div>
+	</div>
+</div>
